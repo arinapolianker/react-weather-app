@@ -1,4 +1,5 @@
 import "./App.css";
+import TempConvert from "./TempConvert";
 import WeatherIcon from "./WeatherIcons";
 
 export default function Weather(props) {
@@ -9,9 +10,7 @@ export default function Weather(props) {
           <WeatherIcon icon={props.data.icon} />
         </div>
         <h2>
-          <span id="deg">{Math.round(props.data.temp)}°</span>
-          <button className="butC">°C</button>
-          <button className="butF">°F</button>
+          <TempConvert temp={props.data.temp} />
         </h2>
         <h3>{props.data.name}</h3>
         <h5>12:30</h5>
