@@ -1,0 +1,195 @@
+body {
+  background-color: rgb(242, 255, 255);
+}
+.container {
+  background: linear-gradient(
+    46deg,
+    rgb(45, 130, 241) 3.3%,
+    rgb(181, 221, 247) 100%
+  );
+  background: linear-gradient(
+    179deg,
+    rgb(31, 58, 109) 3.3%,
+    rgb(53, 87, 150) 100%
+  );
+  background: linear-gradient(
+    179deg,
+    rgb(138, 179, 233) 3.3%,
+    rgb(255, 159, 121) 70%,
+    rgb(252, 220, 132) 100%
+  );
+  background: linear-gradient(
+    179deg,
+    rgb(13, 52, 104) 3.3%,
+    rgb(255, 146, 103) 70%,
+    rgb(255, 216, 109) 100%
+  );
+  color: white;
+  display: block;
+  margin: 30px auto;
+  background-repeat: no-repeat;
+  border: black;
+  border-style: solid;
+  border-radius: 30px;
+  font-family: "Balsamiq Sans", cursive;
+  font-family: "Bebas Neue", cursive;
+  font-family: "Corinthia", cursive;
+  font-family: "Cuprum", sans-serif;
+}
+.width {
+  max-width: 600px;
+  display: block;
+  margin: 30px auto;
+}
+#form {
+  text-align: center;
+  padding: 5px;
+}
+#search {
+  padding: 0 40px;
+  border-radius: 10px;
+
+  border: 1px solid rgba(255, 255, 255, 0.788);
+  background: rgb(206, 206, 206);
+  text-align: center;
+}
+.sub {
+  border-radius: 10px;
+  border: 1px solid rgb(255, 255, 255);
+  background: rgb(206, 206, 206);
+  color: rgb(65, 65, 65);
+}
+.current {
+  border-radius: 10px;
+  border: 1px solid rgb(255, 255, 255);
+  background: rgb(206, 206, 206);
+  color: rgb(65, 65, 65);
+  padding: 1px 7px;
+}
+.butF {
+  position: absolute;
+  font-size: 10px;
+  margin: 30px 10px;
+  padding: 0 7px;
+  background: none;
+  border: solid 1px white;
+  border-radius: 20px;
+  color: white;
+  transition: all 200ms ease-in-out;
+}
+.butF:hover {
+  background: rgb(124, 177, 207);
+  cursor: pointer;
+}
+.butC {
+  position: absolute;
+  font-size: 10px;
+  margin: 15px 10px;
+  padding: 0 6.5px;
+  background: none;
+  border: solid 1px white;
+  border-radius: 20px;
+  color: white;
+  transition: all 200ms ease-in-out;
+}
+.butC:hover {
+  background-color: rgb(124, 177, 207);
+  cursor: pointer;
+}
+
+#icon {
+  display: block;
+  margin: 0 auto;
+}
+section h2 {
+  font-size: 70px;
+  font-family: "Balsamiq Sans", cursive;
+  font-family: "Bebas Neue", cursive;
+  font-family: "Corinthia", cursive;
+  font-family: "Cuprum", sans-serif;
+}
+section h3 {
+  text-transform: capitalize;
+  font-size: 40px;
+  font-family: "Balsamiq Sans", cursive;
+  font-family: "Bebas Neue", cursive;
+  font-family: "Corinthia", cursive;
+  font-family: "Cuprum", sans-serif;
+}
+section h4 {
+  text-transform: capitalize;
+  font-size: 18px;
+}
+section h5 {
+  opacity: 50px;
+  font-size: 15px;
+  font-family: "Balsamiq Sans", cursive;
+  font-family: "Corinthia", cursive;
+  font-family: "Cuprum", sans-serif;
+  font-family: "Genos", sans-serif;
+  font-family: "Indie Flower", cursive;
+  font-family: "Josefin Sans", sans-serif;
+  font-family: "Varela Round", sans-serif;
+}
+section {
+  text-align: center;
+}
+.main {
+  margin: 40px;
+}
+#sunRS {
+  margin: 10px 90px;
+}
+.row {
+  text-align: center;
+  margin-bottom: 30px;
+  font-family: "Balsamiq Sans", cursive;
+  font-family: "Corinthia", cursive;
+  font-family: "Genos", sans-serif;
+  font-family: "Indie Flower", cursive;
+  font-family: "Josefin Sans", sans-serif;
+  font-family: "Varela Round", sans-serif;
+}
+
+.row p {
+  margin-top: 20px;
+  font-size: 13px;
+  margin-bottom: -10px;
+  font-family: "Balsamiq Sans", cursive;
+  font-family: "Bebas Neue", cursive;
+  font-family: "Corinthia", cursive;
+  font-family: "Cuprum", sans-serif;
+}
+.forecast {
+  text-align: center;
+}
+.forecast-day {
+  font-family: "Balsamiq Sans", cursive;
+  font-family: "Bebas Neue", cursive;
+  font-family: "Corinthia", cursive;
+  font-family: "Cuprum", sans-serif;
+  font-size: 20px;
+}
+.forecast-temp {
+  font-family: "Balsamiq Sans", cursive;
+  font-family: "Bebas Neue", cursive;
+  font-family: "Corinthia", cursive;
+  font-family: "Cuprum", sans-serif;
+  font-weight: 2px;
+}
+
+.created {
+  color: grey;
+  font-family: "Courier New", Courier, monospace;
+
+  margin-top: 0;
+  font-size: 12px;
+  text-align: center;
+}
+.link {
+  color: grey;
+  text-decoration: underline;
+}
+.link:hover {
+  color: rgb(49, 49, 49);
+}
