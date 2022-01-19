@@ -1,4 +1,5 @@
 import "./App.css";
+import FormattedDate from "./FormattedDate";
 import TempConvert from "./TempConvert";
 import WeatherIcon from "./WeatherIcons";
 
@@ -13,7 +14,9 @@ export default function Weather(props) {
           <TempConvert temp={props.data.temp} />
         </h2>
         <h3>{props.data.name}</h3>
-        <h5>12:30</h5>
+        <h5>
+          <FormattedDate date={props.data.date} />
+        </h5>
         <h4>{props.data.description}</h4>
       </section>
       <br />
