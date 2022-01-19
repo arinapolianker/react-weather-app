@@ -1,10 +1,13 @@
 import "./App.css";
+import WeatherIcon from "./WeatherIcons";
 
 export default function Weather(props) {
   return (
     <div>
       <section className="main">
-        <div>icon</div>
+        <div>
+          <WeatherIcon icon={props.data.icon} />
+        </div>
         <h2>
           <span id="deg">{Math.round(props.data.temp)}°</span>
           <button className="butC">°C</button>
