@@ -1,4 +1,4 @@
-export default function WeatherIcon(props) {
+export default function WeatherIcons(props) {
   const codeMapping = {
     "01d": require("./svg/01d.svg").default,
     "01n": require("./svg/01n.svg").default,
@@ -20,11 +20,15 @@ export default function WeatherIcon(props) {
     "50n": require("./svg/50n.svg").default,
   };
 
-  return (
-    <img
-      src={codeMapping[props.icon]}
-      alt={props.icon.description}
-      width={150}
-    />
-  );
+  if (props.width === 160) {
+    return (
+      <img
+        src={codeMapping[props.icon]}
+        alt={props.icon.description}
+        width={160}
+      />
+    );
+  } else {
+    return <img src={codeMapping[props.icon]} alt={props.icon.description} />;
+  }
 }

@@ -21,6 +21,7 @@ function App() {
       humidity: response.data.main.humidity,
       feelsLike: response.data.main.feels_like,
       icon: response.data.weather[0].icon,
+      coords: response.data.coord,
     });
     setLoad(true);
   }

@@ -1,14 +1,15 @@
 import "./App.css";
 import FormattedDate from "./FormattedDate";
 import TempConvert from "./TempConvert";
-import WeatherIcon from "./WeatherIcons";
+import WeatherForecast from "./WeatherForecast";
+import WeatherIcons from "./WeatherIcons";
 
 export default function Weather(props) {
   return (
     <div>
       <section className="main">
         <div>
-          <WeatherIcon icon={props.data.icon} />
+          <WeatherIcons icon={props.data.icon} width={160} />
         </div>
         <h2>
           <TempConvert temp={props.data.temp} />
@@ -60,52 +61,7 @@ export default function Weather(props) {
       </div>
 
       <hr />
-      <div className="forecast">
-        <div className="row">
-          <div className="col-2">
-            <img className="icon" src alt="cloudy" width="60px" />
-            <div className="forecast-temp">
-              <strong>19°</strong>
-            </div>
-            <div className="forecast-day">Thu</div>
-          </div>
-          <div className="col-2">
-            <img className="icon" src alt="cloudy" width="60px" />
-            <div className="forecast-temp">
-              <strong>19°</strong>
-            </div>
-            <div className="forecast-day">Thu</div>
-          </div>
-          <div className="col-2">
-            <img className="icon" src alt="cloudy" width="60px" />
-            <div className="forecast-temp">
-              <strong>19°</strong>
-            </div>
-            <div className="forecast-day">Thu</div>
-          </div>
-          <div className="col-2">
-            <img className="icon" src alt="cloudy" width="60px" />
-            <div className="forecast-temp">
-              <strong>19°</strong>
-            </div>
-            <div className="forecast-day">Thu</div>
-          </div>
-          <div className="col-2">
-            <img className="icon" src alt="cloudy" width="60px" />
-            <div className="forecast-temp">
-              <strong>19°</strong>
-            </div>
-            <div className="forecast-day">Thu</div>
-          </div>
-          <div className="col-2">
-            <img className="icon" src alt="cloudy" width="60px" />
-            <div className="forecast-temp">
-              <strong>19°</strong>
-            </div>
-            <div className="forecast-day">Thu</div>
-          </div>
-        </div>
-      </div>
+      <WeatherForecast coords={props.data.coords} />
     </div>
   );
 }
