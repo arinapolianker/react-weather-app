@@ -16,7 +16,7 @@ function App() {
       date: new Date(response.data.dt * 1000),
       description: response.data.weather[0].description,
       sunrise: response.data.sys.sunrise,
-      sunset: response.data.sys.sunrise,
+      sunset: response.data.sys.sunset,
       wind: response.data.wind.speed,
       humidity: response.data.main.humidity,
       feelsLike: response.data.main.feels_like,

@@ -1,5 +1,6 @@
 import "./App.css";
 import FormattedDate from "./FormattedDate";
+import SunTime from "./SunTime";
 import TempConvert from "./TempConvert";
 import WeatherForecast from "./WeatherForecast";
 import WeatherIcons from "./WeatherIcons";
@@ -21,21 +22,9 @@ export default function Weather(props) {
         <h4>{props.data.description}</h4>
       </section>
       <br />
-      <div className="row" id="sunRS">
-        <div className="col-6">
-          <p>
-            SUNRISE <i className="far fa-sun"></i> <br />
-            <span id="sunrise">{props.data.sunrise}</span>
-          </p>
-        </div>
-        <div className="col-6">
-          <p>
-            SUNSET<i className="far fa-moon"></i>
-            <br />
-            <span id="sunset">{props.data.sunset}</span>
-          </p>
-        </div>
-      </div>
+
+      <SunTime suntime={props.data} />
+
       <div className="row" id="WHF">
         <div className="col-4">
           <p className="w">
@@ -55,7 +44,7 @@ export default function Weather(props) {
           <p className="f">
             FEELS LIKE <i className="fas fa-temperature-low"></i>
             <br />
-            <span id="f">{Math.round(props.data.feelsLike)}°</span>
+            <span id="f">{Math.round(props.data.feelsLike)}°C</span>
           </p>
         </div>
       </div>

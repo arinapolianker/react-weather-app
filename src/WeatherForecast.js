@@ -9,7 +9,7 @@ export default function WeatherForecast(props) {
 
   function showForeCast(response) {
     setForecast(response.data.daily);
-    console.log(response.data.daily);
+
     setLoad(true);
   }
   function search() {
@@ -24,24 +24,15 @@ export default function WeatherForecast(props) {
     return (
       <div className="forecast">
         <div className="row">
-          <div className="col-2">
-            <ForecastDay day={forecast[0]} />
-          </div>
-          <div className="col-2">
-            <ForecastDay day={forecast[1]} />
-          </div>
-          <div className="col-2">
-            <ForecastDay day={forecast[2]} />
-          </div>
-          <div className="col-2">
-            <ForecastDay day={forecast[3]} />
-          </div>
-          <div className="col-2">
-            <ForecastDay day={forecast[4]} />
-          </div>
-          <div className="col-2">
-            <ForecastDay day={forecast[5]} />
-          </div>
+          {forecast.map((day, index) => {
+            if (index < 6) {
+              return (
+                <div className="col" key={index}>
+                  <ForecastDay data={day} />
+                </div>
+              );
+            }
+          })}
         </div>
       </div>
     );
