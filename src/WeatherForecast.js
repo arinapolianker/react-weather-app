@@ -13,7 +13,6 @@ export default function WeatherForecast(props) {
 
   function showForeCast(response) {
     setForecast(response.data.daily);
-    console.log(response.data);
     setLoad(true);
   }
   function search() {
