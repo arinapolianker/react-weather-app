@@ -60,6 +60,7 @@ This will start the development server, and you can view the app in your browser
   - **Morning (6:00 AM - 7:00 AM)**: Light gradient with sunrise colors.
   - **Day (7:00 AM - 5:00 PM)**: Bright, clear sky theme.
   - **Evening (5:00 PM - 6:00 PM)**: Sunset colors.
+Sunrise and sunset times are displayed based on the city or geolocation selected.
 
 ## Available Scripts
 
